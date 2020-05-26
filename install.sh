@@ -13,5 +13,7 @@ catkin build
 # clone LeGO-LOAM
 cd ~/catkin_ws/src
 git clone https://github.com/RobustFieldAutonomyLab/LeGO-LOAM.git
+git clone https://github.com/koide3/ndt_omp
+git clone https://github.com/koide3/odometry_saver.git
 cd ..
 catkin build
