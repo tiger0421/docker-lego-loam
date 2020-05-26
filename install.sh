@@ -1,7 +1,6 @@
 #!/bin/bash
 
-ROS_DISTRO=$(ls /opt/ros)
-source /opt/ros/$ROS_DISTRO/setup.bash
+source /opt/ros/$(ls /opt/ros)/setup.bash
 
 
 # create workspace
