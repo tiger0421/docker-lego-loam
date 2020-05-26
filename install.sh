@@ -1,6 +1,8 @@
 #!/bin/bash
 
+ROS_DISTRO=$(ls /opt/ros)
 source /opt/ros/$ROS_DISTRO/setup.bash
+
 
 # create workspace
 mkdir -p ~/catkin_ws/src

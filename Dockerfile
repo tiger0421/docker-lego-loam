@@ -18,7 +18,7 @@ RUN wget -O /root/Downloads/gtsam.zip https://github.com/borglab/gtsam/archive/4
     make install
 
 WORKDIR /root/catkin_ws/src
-RUN git clone https://github.com/RobustFieldAutonomyLab/LeGO-LOAM.git && \
-    cd .. && \
-    catkin build
+COPY docker-entrypoint.sh /tmp
+ENTRYPOINT ["/tmp/docker-entrypoint.sh"]
+CMD ["/bin/bash"]
 WORKDIR /root
