@@ -5,10 +5,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && \
     apt install -y \
         unzip \
-        ros-melodic-geodesy \
-	ros-melodic-pcl-ros \
-	ros-melodic-nmea-msgs \
-	ros-melodic-libg2o && \
+        ros-$(ls /opt/ros)-geodesy \
+	ros-$(ls /opt/ros)-pcl-ros \
+	ros-$(ls /opt/ros)-nmea-msgs \
+	ros-$(ls /opt/ros)-libg2o && \
     apt autoremove -y && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
