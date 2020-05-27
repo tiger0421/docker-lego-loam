@@ -1,5 +1,5 @@
 # docker-lego-loam
-For details, see https://github.com/RobustFieldAutonomyLab/LeGO-LOAM
+For details, see https://github.com/facontidavide/LeGO-LOAM-BOR
 
 # Support
 - kinetic
