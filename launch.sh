@@ -1,8 +1,6 @@
 #!/bin/bash
 xhost +local:root
 
-IMAGE_NAME=$1
-
 docker run -it --name lego-loam \
     -v ~/share:/root/share \
     -v ~/ros_ws/catkin_lego_ws:/root/catkin_ws \

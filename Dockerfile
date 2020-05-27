@@ -8,7 +8,8 @@ RUN apt update && \
         ros-$(ls /opt/ros)-geodesy \
 	ros-$(ls /opt/ros)-pcl-ros \
 	ros-$(ls /opt/ros)-nmea-msgs \
-	ros-$(ls /opt/ros)-libg2o && \
+	ros-$(ls /opt/ros)-libg2o \
+    && \
     apt autoremove -y && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
