@@ -15,7 +15,7 @@ sh launch.sh
 
 # Build
 ```
-docker build -t IMAGE_NAME:TAG_NAME . 
+docker build --build-arg BASE_TAG=1.0-glvnd-runtime-ubuntu18.04 -t IMAGE_NAME:TAG_NAME . 
 ```
 
 # LICENSE
