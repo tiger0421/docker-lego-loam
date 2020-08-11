@@ -8,7 +8,7 @@ docker run -it --name lego-loam \
     -e DISPLAY=$DISPLAY \
     -e QT_X11_NO_MITSHM=1 \
     --gpus all \
-    lego-loam:1.0-glvnd-runtime-ubuntu18.04 \
+    tiger0421/docker-lego-loam:1.0-glvnd-runtime-ubuntu18.04 \
     /bin/bash
 
 xhost -local:root
